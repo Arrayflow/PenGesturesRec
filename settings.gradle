@@ -1,0 +1,38 @@
+//pluginManagement {
+//    repositories {
+//        google()
+//        maven { url 'https://maven.aliyun.com/repository/public/' }
+//        maven { url 'https://maven.aliyun.com/repository/google/' }
+//        maven { url 'https://maven.aliyun.com/repository/jcenter/' }
+//        maven { url "https://mvn.getui.com/nexus/content/repositories/releases/" }
+//        maven {
+//            url 'http://mirrors.huaweicloud.com/repository/maven/'
+//            allowInsecureProtocol = true
+//        }
+//        mavenLocal()
+//        mavenCentral()
+//        gradlePluginPortal()
+//
+//        mavenCentral()
+//    }
+//}
+//origin
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+
+
+rootProject.name = "PenGesturesRec"
+include ':app'
